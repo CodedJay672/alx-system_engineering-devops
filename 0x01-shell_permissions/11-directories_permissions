@@ -1,2 +1,2 @@
 #!/bin/bash
-cd .., umask 0066
+umask 0066
