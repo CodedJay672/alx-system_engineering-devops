@@ -1,17 +1,18 @@
-total 48
-drwxr-xr-x 2 root root 296 Jun 27 17:20 .
-drwxr-xr-x 6 root root 121 Jun 27 06:37 ..
--rwxr--r-- 1 root root  32 Jun 27 10:19 0-hello_world
--rwxr--r-- 1 root root  28 Jun 27 10:34 1-confused_smiley
--rwxr--r-- 1 root root  29 Jun 27 10:25 2-hellofile
--rwxr--r-- 1 root root  40 Jun 27 10:27 3-twofiles
--rwxr--r-- 1 root root  35 Jun 27 10:37 4-lastlines
--rwxr--r-- 1 root root  35 Jun 27 10:30 5-firstlines
--rwxr--r-- 1 root root  32 Jun 27 16:52 6-third_line
--rwxr--r-- 1 root root  94 Jun 27 17:13 7-file
--rwxr--r-- 1 root root  35 Jun 27 17:20 8-cwd_state
--rw-r--r-- 1 root root  40 Jun 27 10:57 \*\\'"Best
--rw-r--r-- 1 root root  12 Jun 27 17:14 \*\\"Best School"\\\\*$\?\*\*\*\*\*:)
--rw-r--r-- 1 root root   0 Jun 27 10:47 iacta
--rw-r--r-- 1 root root   0 Jun 27 17:20 ls_cwd_content
--rw-r--r-- 1 root root 213 Jun 27 10:13 README.md
+total 60
+drwxr-xr-x 2 root root 4096 Jun 27 20:10 .
+drwxr-xr-x 6 root root  121 Jun 27 06:37 ..
+-rwxr--r-- 1 root root   32 Jun 27 19:23 0-hello_world
+-rwxr--r-- 1 root root   28 Jun 27 19:29 1-confused_smiley
+-rwxr--r-- 1 root root   29 Jun 27 19:32 2-hellofile
+-rwxr--r-- 1 root root   40 Jun 27 19:33 3-twofiles
+-rwxr--r-- 1 root root   35 Jun 27 19:35 4-lastlines
+-rwxr--r-- 1 root root   35 Jun 27 19:36 5-firstlines
+-rwxr--r-- 1 root root   38 Jun 27 19:38 6-third_line
+-rwxr--r-- 1 root root   90 Jun 27 20:00 7-file
+-rwxr--r-- 1 root root   36 Jun 27 20:04 8-cwd_state
+-rw-r--r-- 1 root root   12 Jun 27 20:00 \*\"Best School"\\\*$\?\*\*\*\*\*:)
+-rw-r--r-- 1 root root   12 Jun 27 19:44 \*\\"Best School"\\\\*$\?\*\*\*\*\*:)
+-rw-r--r-- 1 root root   12 Jun 27 19:47 \*\\'Best School\'\\*$\?\*\*\*\*\*:)
+-rw-r--r-- 1 root root   12 Jun 27 19:55 \*\\\"Best School\"\\\\*$\?\*\*\*\*\*:)
+-rw-r--r-- 1 root root    0 Jun 27 20:10 ls_cwd_content
+-rw-r--r-- 1 root root  112 Jun 27 19:30 README.md
