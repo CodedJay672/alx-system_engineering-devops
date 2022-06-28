@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -l | sort -k 8 | awk '{print $9}'
+ls -l | sort -rk 5 | awk '{print $9}' | head -n 10
