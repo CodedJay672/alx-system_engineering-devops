@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -size 0'c' | cut -c3-
+ls -la | find  -size 0'c' -name "*" | cut -c3-
