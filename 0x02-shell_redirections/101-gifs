@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -la  | sort -nfk 5 | find -type f -name "*.gif" | cut -c 3- | cut -d '.' -f 1
