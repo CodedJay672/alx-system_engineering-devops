@@ -2,6 +2,7 @@
 # displays minutes and hours of a clock
 
 i="1"
+echo "Hour: 0"
 while [ $i -le 12 ] ; do
 	j="1"
 	while [ $j -le 60 ] ; do
