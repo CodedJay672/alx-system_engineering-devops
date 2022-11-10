@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# displays minutes and hours of a clock
+
+i="1"
+while [ $i -le 12 ] ; do
+	j="1"
+	while [ $j -le 60 ] ; do
+		if [ $j -eq 60 ] ; then
+			echo "Hour: $i"
+		else echo "$j"
+		fi
+		j=$((j+1)) ;
+	done
+	i=$((i+1)) ;
+done
