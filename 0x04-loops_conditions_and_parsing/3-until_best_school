@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# prints "Best School" 10X using the until statement
+i="0"
+until [ $i -eq 10 ] ; do
+	echo "Best School"
+	i=$((i+1)) ;
+done
