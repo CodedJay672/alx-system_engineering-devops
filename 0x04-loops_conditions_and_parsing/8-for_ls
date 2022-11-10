@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # prints only names of file, one per line
 
-LIST=$(find . -type f | cut -f 2 -d '-')
+LIST=$(ls | cut -f 2 -d '-')
 for i in $LIST ; do
 	echo "$i" ;
 done
