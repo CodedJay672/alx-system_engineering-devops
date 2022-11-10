@@ -2,7 +2,7 @@
 # script prints "best school" 10X using while loop
 
 i="0"
-while [ $i -le 10 ] ; do
+while [ $i -lt 10 ] ; do
 	echo "Best School"
 	i=$((i+1)) ;
 done
