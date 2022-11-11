@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # prints visitors IP address and HTTP status code from access log file
 
-awk '{print $1,$9}' apache-access.log
+awk '{ print NR, $1, " ", $9 }' apache-access.log | sort -r
