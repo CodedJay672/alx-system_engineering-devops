@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# prints visitors IP address and HTTP status code from access log file
+
+input=$(awk '{print $1,$9}' apache-access.log)
+while read -r "$1" "$2"
+do
+	echo "$1 $2"
+done < "$input"
