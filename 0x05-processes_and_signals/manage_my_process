@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# script which writes "I am alive" indefinitely into /tmp/my_process
+# sleep for 2 secs after printing each line
+
+while true
+do
+	sudo echo "I am alive!" >> /tmp/my_process
+	sleep 2
+done
