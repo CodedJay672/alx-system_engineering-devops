@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# script which executes a command when a signal is sent
+
+while true
+do
+	echo "To infinity and beyond"
+	sleep 2
+	trap 'echo "I am invincible!!!"' SIGTERM
+done
