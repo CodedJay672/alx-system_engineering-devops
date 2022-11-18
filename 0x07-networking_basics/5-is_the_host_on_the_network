@@ -1,9 +1,14 @@
 #!/usr/bin/env bash
 # script which PINGS an IP ADDRESS on a network 
 ip_address="$1"
+count="0"
 if [ "$ip_address" == "" ]
 then
 	echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
 else
-	ping "$1"
+	while [ $count -lt 5 ]
+	do
+		ping "$ip_address"
+		count=$((count+1))
+	done
 fi
