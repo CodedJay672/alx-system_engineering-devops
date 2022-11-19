@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# SCript which prints listening ports along with their PID numbers
+
+sudo netstat --listening --program
