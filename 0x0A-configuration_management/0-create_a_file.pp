@@ -1,3 +1,5 @@
+# Puppet manifest that creates a file with content
+
 file { 'content':
   owner   => 'www-data',
   group   => 'www-data',
