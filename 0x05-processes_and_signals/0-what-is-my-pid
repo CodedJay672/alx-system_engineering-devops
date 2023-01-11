@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 # script which prints a process ID
 
-my_id=getpid
-echo "$my_id"
+echo $$
