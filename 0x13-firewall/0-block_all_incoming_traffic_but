@@ -1,10 +1,11 @@
-sudo apt install ufw
+sudo apt-get update
+sudo apt-get install ufw
 sudo vim /etc/default/ufw
 sudo ufw status
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
-sudo ufw allow ssh
+sudo ufw allow ssh/tcp
 sudo ufw enable
-sudo ufw allow 80
-sudo ufw allo 443
+sudo ufw allow 80/tcp
+sudo ufw allo 443/tcp
 sudo ufw status
