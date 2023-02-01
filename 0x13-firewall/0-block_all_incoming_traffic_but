@@ -1,7 +1,7 @@
 sudo apt-get update
 sudo apt-get install ufw
-sudo vim /etc/default/ufw
-sudo ufw status
+sudo sed -i 's/ipv6=.*/ipv6=yes/' /etc/default/ufw
+sudo ufw disable
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
 sudo ufw allow ssh/tcp
