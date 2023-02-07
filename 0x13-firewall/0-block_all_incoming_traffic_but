@@ -7,5 +7,5 @@ sudo ufw default allow outgoing
 sudo ufw allow ssh/tcp
 sudo ufw enable
 sudo ufw allow 80/tcp
-sudo ufw allo https/tcp
+sudo ufw allow 443/tcp
 sudo ufw status
