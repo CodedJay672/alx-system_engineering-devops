@@ -33,22 +33,15 @@ defaults
         errorfile 503 /etc/haproxy/errors/503.http
         errorfile 504 /etc/haproxy/errors/504.http
 
-frontend techy-http
+frontend techy-frontend
+	mode http
         bind *:80
-	reqadd X-Forward-Proto:\ http
-	default_backend web-servers
-
-frontend techy-https
-	bind *:443
-	reqadd X-Forward-Proto:\ https
-	use_backend letsencrypt-backend if letsencryptiacl
+	bind *:443 ssl crt /etc/haproxy/certs/www.techopreneur.tech.pem
+	redirect scheme https if !{ ssl_fc }
+	stats uri /haproxy?stats
 	default_backend web-servers
 
 backend web-servers
         balance roundrobin
-	redirect scheme https if !{ ssl_fc }
         server 17682-web-01 34.227.91.14:80 check
         server 17682-web-02 54.237.32.4:80 check
-
-backend lentencrypt-backend
-	server letsencrypt 127.0.0.1:54321
