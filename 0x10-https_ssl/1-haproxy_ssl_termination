@@ -36,7 +36,7 @@ defaults
 frontend techy-frontend
         bind *:80
         mode http
-        bind *:443 ssl crt /etc/haproxy/certs/www.techopreneur.tech.pem
+        bind 100.25.117.136:443 ssl crt /etc/haproxy/certs/www.techopreneur.tech.pem
         redirect scheme https if !{ ssl_fc }
         stats uri /haproxy?stats
         default_backend web-servers
