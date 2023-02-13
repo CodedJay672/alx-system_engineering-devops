@@ -2,11 +2,10 @@
 """
 python script that uses REST API to get data from a
 domain.
-script also exports data obtained as a CSV file
-
+script also exports data obtained into a file in JSON format
 """
 
-import csv
+import json
 import requests
 import sys
 
@@ -15,8 +14,9 @@ if __name__ == "__main__":
     user = requests.get(url + "users/{}".format(sys.argv[1])).json()
     username = user.get("username")
     tasks = requests.get(url + "todos", params={"userId": sys.argv[1]}).json()
-    with open("{}.csv".format(sys.argv[1]), "w", newline="") as csv_file:
-        my_writer = csv.writer(csv_file, quoting=csv.QUOTE_ALL)
-        [my_writer.writerow(
-            [sys.argv[1], username, t.get("completed"), t.get("title")]
-         ) for t in tasks]
+
+    dictionary = {sys.argv[1]: [{"task": t.get("title"), "completed": t.get(
+        "completed"), "username": username} for t in tasks]}
+
+    with open("{}.json".format(sys.argv[1]), "w") as json_file:
+        json.dump(dictionary, json_file)
