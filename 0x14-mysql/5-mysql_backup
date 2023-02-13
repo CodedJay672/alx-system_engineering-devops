@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# script that creates a compressed mysqldum file as backup
+# dump file is sent to a remote server in another physical
+# location. 
+
+tarFile = "$(date + %d-%m-%Y).tar.gz"
+sudo mysqldump -uroot -p "$1" --all-databaases > backup.sql
+tar -cvzf  "$tarFile" backup.sql
