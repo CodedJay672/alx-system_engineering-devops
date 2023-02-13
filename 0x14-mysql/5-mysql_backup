@@ -3,5 +3,5 @@
 # dump file is sent to a remote server in another physical
 # location. 
 
-sudo mysqldump -uroot -p "$1" --all-databaases > backup.sql
-tar -cvzf  "$(date + %d-%m-%Y).tar.gz" backup.sql
+mysqldump -uroot -p "$1" --all-databaases > backup.sql
+tar -cvzf  "$(date +%d-%m-%Y).tar.gz" backup.sql
